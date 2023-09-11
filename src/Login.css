@@ -1,0 +1,124 @@
+/* Login.css */
+
+/* Split the page horizontally */
+.Login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Style the left section (1/3) with a blue background */
+  .Left-section {
+    flex: 1;
+    background-color: #22668D; /* Use your primary color (e.g., blue) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the icon (you can replace or customize the icon as needed) */
+  .Icon {
+    color: white;
+    font-size: 3rem;
+  }
+  
+  /* Style the right section (2/3) for the form */
+  .Right-section {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the form container */
+  .Form-container {
+    /* max-width: 400px; */
+    padding: 30px;
+    width: 50%;
+    /* height: 50vh; */
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  /* Style form elements */
+  .FormGroup {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left (start) */
+  }
+  
+  /* Style form labels */
+  .FormLabel {
+    font-size: 18px; /* Increase font size for labels */
+    margin-bottom: 5px;
+  }
+  
+  /* Style form input fields */
+  .FormControl {
+    border: 2px solid #22668D; /* Border color (your primary color) */
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 95%;
+  }
+  
+  /* Style the submit button */
+  .Button {
+    background-color: #22668D; /* Use your primary color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+    width: 100%;
+    font-size: 22px;
+    margin-top: 40px;
+  }
+  
+  .Button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
+
+  .Title{
+    font-size: 33px;
+    font-weight: 300;
+    margin-bottom: 38px !important;
+  }
+
+  .titleDiv{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SignIcon{
+    font-size: 40px;
+    color: #22668D;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.Logo{
+    font-size: 120px;
+    color: white;
+}
+
+.forget{
+    color: #22668D;
+    float: left;
+    font-size: 18px;
+}
+
+.forgetDiv{
+    display: flex;
+    align-items: flex-start;
+}
