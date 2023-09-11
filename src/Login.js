@@ -28,7 +28,7 @@ export default function Login() {
 
       <Form onSubmit={handleSubmit}>
 
-        <Form.Group size="lg" controlId="email">
+        <Form.Group size="lg" controlId="studentID">
 
           <Form.Label>Student ID</Form.Label>
 
@@ -36,7 +36,7 @@ export default function Login() {
 
             autoFocus
 
-            type="studentID"
+            type="id"
 
             value={studentID}
 
