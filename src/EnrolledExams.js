@@ -15,23 +15,25 @@ export default function EnrolledExams() {
   ]);
 
   return (
-    <div className="container">
-      <div className="icon-container">
-        <div className="icon">
-          {/* You can use an icon library or an image here */}
-          Icon
+    <div className="EnrolledExams">
+        <div className="container">
+            <div className="icon-container">
+                <div className="icon">
+                {/* You can use an icon library or an image here */}
+                Icon
+                </div>
+            </div>
+            <div className="card-list-container">
+                {studentSeats.map((studentSeat) => (
+                <Card key={studentSeat.id} className="custom-card">
+                    <Card.Body>
+                    <Card.Title className="exam-room">{studentSeat.examRoom}</Card.Title>
+                    <Card.Text className="seat-number">{studentSeat.seatNumber}</Card.Text>
+                    </Card.Body>
+                </Card>
+                ))}
+            </div>
         </div>
-      </div>
-      <div className="card-list-container">
-        {studentSeats.map((studentSeat) => (
-          <Card key={studentSeat.id} className="custom-card">
-            <Card.Body>
-              <Card.Title className="exam-room">{studentSeat.examRoom}</Card.Title>
-              <Card.Text className="seat-number">{studentSeat.seatNumber}</Card.Text>
-            </Card.Body>
-          </Card>
-        ))}
-      </div>
     </div>
   );
 }
