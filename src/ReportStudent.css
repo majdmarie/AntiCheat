@@ -1,52 +1,56 @@
 /* ReportStudent.css */
-    .ReportStudent body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        text-align: center;
-        background-color: #f2f2f2;
-    }
-
-    .container {
-        display: flex;
-        width: 100%;
-        max-height: 100vh; /* Fill the entire height */
-    }
-
-    .left-part {
-        flex: 1;
-        background-color: #007bff;
-        padding: 20px;
-        height: 100%;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .right-part {
-        flex: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
-
-    .center-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.ReportStudent body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    max-height: 100vh;
+    /* Fill the entire height */
+  }
+  
+  .left-part {
+    flex: 1;
+    background-color: #007bff;
+    padding: 20px;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .right-part {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   
   
   .form-container {
     background-color: #fff;
-    padding: 20px;
+    width: 70%;
+    padding: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -58,9 +62,9 @@
   }
   
   .form-label {
-    font-size: 16px;
-    text-align: left; /* Align labels to the left */
-    margin-bottom: 10px;
+    font-size: 18px;
+    /* Increase font size for labels */
+    margin-bottom: 5px;
   }
   
   .form-input {
@@ -74,19 +78,39 @@
   .form-select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 5px;
     outline: none;
   }
   
   .form-button {
-    width: 100%;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #fff;
+    /* width: 100%;
+      margin-top: 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px; */
+  
+    background-color: #22668D;
+    /* Use your primary color */
     border: none;
-    border-radius: 5px;
-    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Add a smooth hover effect */
+    width: 100%;
+    font-size: 22px;
+    margin-top: 40px;
+  
   }
   
-  
+  .formGroup {
+    margin-bottom: 20px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }

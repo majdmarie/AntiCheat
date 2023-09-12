@@ -20,18 +20,15 @@ export default function ReportStudent() {
   return (
     <div className="ReportStudent">
         <div className="container">
-            <div className="left-part">
-                {/* Fill the entire height of the page with the left part */}
+            {/* <div className="left-part">
                 <h2>Welcome to the Color Palette</h2>
                 <div className="color-box"></div>
-            </div>
+            </div> */}
             <div className="right-part">
-                {/* Center the right part vertically and horizontally */}
-                <div className="center-content">
                 <div className="form-container">
                     <Form onSubmit={handleSubmit}>
                     <h2 className="form-title">Report Student</h2>
-                    <Form.Group size="lg" controlId="reportedSeatNumber">
+                    <Form.Group size="lg" controlId="reportedSeatNumber" className="formGroup">
                         <Form.Label className="form-label">
                         Reported Seat Number
                         </Form.Label>
@@ -40,9 +37,12 @@ export default function ReportStudent() {
                         autoFocus
                         value={reportedSeatNumber}
                         onChange={(e) => setReportedSeatNumber(e.target.value)}
+                        placeholder="Enter the seat number you want to report"
+
                         />
+
                     </Form.Group>
-                    <Form.Group size="lg" controlId="examRoom">
+                    <Form.Group size="lg" controlId="examRoom" className="formGroup">
                         <Form.Label className="form-label">Exam Room</Form.Label>
                         <select
                         className="form-select"
@@ -54,7 +54,7 @@ export default function ReportStudent() {
                         <option value="c">c</option>
                         </select>
                     </Form.Group>
-                    <Form.Group size="lg" controlId="description">
+                    <Form.Group size="lg" controlId="description" className="formGroup">
                         <Form.Label className="form-label">Description</Form.Label>
                         <Form.Control
                         as="textarea"
@@ -62,6 +62,8 @@ export default function ReportStudent() {
                         className="form-input"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
+                        placeholder="Add your notes"
+
                         />
                     </Form.Group>
                     <Button
@@ -77,7 +79,6 @@ export default function ReportStudent() {
                 </div>
                 </div>
             </div>
-        </div>
     </div>
   );
 }
