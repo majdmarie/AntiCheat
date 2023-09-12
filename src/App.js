@@ -12,12 +12,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <Routes>
-          <Route path="/Login" element={<Login/>} />
-          <Route path="/" element={<ReportStudent/>} />
-          <Route path="/rooms" element={<EnrolledExams/>} />
-          <Route path="/record" element={<CheatingRecord/>} />
+          <Route path="/Login" element={<div><Login/></div>} />
+          <Route path="/" element={<div><Navbar/><ReportStudent/></div>} />
+          <Route path="/rooms" element={<div><Navbar/><EnrolledExams/></div>} />
+          <Route path="/record" element={<div><Navbar/><CheatingRecord/></div>} />
         </Routes>
       </Router>
     </div>
