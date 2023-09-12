@@ -7,8 +7,10 @@ import CheatingRecord from './CheatingRecord'
 function App() {
   return (
     <div className="App">
-      <Login>
-      </Login>
+      {/* <Login>
+      </Login> */}
+      <ReportStudent>
+      </ReportStudent>
     </div>
   );
 }

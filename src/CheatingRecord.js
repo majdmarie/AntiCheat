@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Doughnut } from "react-chartjs-2";
-import {Chart, ArcElement} from 'chart.js'
+import { Chart, ArcElement } from 'chart.js'
 Chart.register(ArcElement);
 
 export default function StatisticsChart() {
@@ -8,15 +8,15 @@ export default function StatisticsChart() {
     const [approvedReports, setApprovedReports] = useState(3);
     const [neutralReports, setNeutralReports] = useState(10);
     const [disapprovedReports, setDisapprovedReports] = useState(2);
-    
+
     const [chartData, setChartData] = useState(
         {
             labels: ["Approved", "Neutral", "Disapproved"],
             datasets: [
                 {
-                data: [approvedReports, neutralReports, disapprovedReports],
-                backgroundColor: ["#36A2EB", "#FFCE56", "#FF6384"],
-                hoverBackgroundColor: ["#36A2EB", "#FFCE56", "#FF6384"],
+                    data: [approvedReports, neutralReports, disapprovedReports],
+                    backgroundColor: ["#36A2EB", "#FFCE56", "#FF6384"],
+                    hoverBackgroundColor: ["#36A2EB", "#FFCE56", "#FF6384"],
                 },
             ],
         });
